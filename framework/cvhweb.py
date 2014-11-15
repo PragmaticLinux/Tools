@@ -41,3 +41,7 @@ vhr += '\n</VirtualHost>'
 vhost = open('/etc/httpd/conf/extra/httpd-vhosts.conf','a')
 vhost.write(vhr)
 vhost.close()
+
+# write application to execute "sysmtectl restart httpd.service"
+# write application to execute "sysmtectl reload httpd.service"
+
