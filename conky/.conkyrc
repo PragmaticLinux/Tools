@@ -68,8 +68,8 @@ ${color fff}$font${top_mem name 7}${alignr}${top mem_res 7} ${top cpu 7}%
 
 
 ${font Arial:bold:size=10}${color fff}Server Service ${color 00BBBD}${hr 2}$font
-${color fff}Apache Server      $alignr ${color 00BBBD} ${execi 1 sh $HOME/service-status.sh apache}
-${color fff}MySQL Server      $alignr ${color 00BBBD} ${execi 1 sh $HOME/service-status.sh mysql}
-${color fff}SSH Server      $alignr ${color 00BBBD} ${execi 1 sh $HOME/service-status.sh sshd}
-${color fff}FTP Server      $alignr ${color 00BBBD} ${execi 1 sh $HOME/service-status.sh ftp}
+${color fff}Apache Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh apache}
+${color fff}MySQL Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh mysql}
+${color fff}SSH Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh sshd}
+${color fff}FTP Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh ftp}
 
