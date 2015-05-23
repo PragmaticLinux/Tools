@@ -15,3 +15,4 @@ else:
 FInstaller = FrameworkInstaller()
 FInstaller.frameworkName = framework
 FInstaller.start()
+input(FInstaller.FG_GREEN+"Installation Completed 100% --> Successful  (Press Enter to exit)")

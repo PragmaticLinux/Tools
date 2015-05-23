@@ -7,15 +7,16 @@ import pwd
 class VirtualHost:
     successful = False
     projectname = " "
-
+    password = "pragmatic"
     def prt(self):
         print("Hello")
 
     #Create User
-    def create_user(self,group,projectname):
+    def create_user(self,group,projectname,password):
         os.system("useradd -m -g "+group+" -G wheel -s /bin/bash "+projectname)
         os.mkdir("/home/"+projectname+"/public_html",777)
         os.system("chmod -R 777 /home/"+projectname)
+        os.system("echo "+projectname+":"+password+" | chpasswd ")
 
     #Create Virtualhost
     def create_virtualhost(self,projectname):
@@ -46,12 +47,17 @@ class VirtualHost:
         self.projectname = input('Project Name: ')
         group = "projectdev"
 
+        self.password = input("New Password: ")
+        while self.password == "":
+            self.password = "pragmatic" #Default password
+
         #Creating User  
-        try:
-            pwd.getpwnam(self.projectname)
+        try:   
+            while pwd.getpwnam(self.projectname):
+                self.projectname = input('This name exist write another projectname: ')
         except KeyError:
-            print("User Created")
-            self.create_user(group,self.projectname)
+            print("User is creating")
+            self.create_user(group,self.projectname,self.password)
 
         
         # Virtual Host rules to write
