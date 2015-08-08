@@ -28,7 +28,6 @@ PREPARE REMOVEFILE libnssckbi.so
 PREPARE REMOVEFILE libnss3.so
 PREPARE REMOVEFILE libnspr4.so
 PREPARE REMOVEFILE libmozsqlite3.so
-PREPARE REMOVEFILE libmozalloc.so
 PREPARE REMOVEFILE libfreebl3.so
 PREPARE REMOVEFILE libfreebl3.chk
 PREPARE REMOVEFILE icons/updater.png
@@ -173,7 +172,6 @@ EXECUTE REMOVEFILE libnssckbi.so
 EXECUTE REMOVEFILE libnss3.so
 EXECUTE REMOVEFILE libnspr4.so
 EXECUTE REMOVEFILE libmozsqlite3.so
-EXECUTE REMOVEFILE libmozalloc.so
 EXECUTE REMOVEFILE libfreebl3.so
 EXECUTE REMOVEFILE libfreebl3.chk
 EXECUTE REMOVEFILE icons/updater.png
@@ -318,7 +316,6 @@ FINISH REMOVEFILE libnssckbi.so
 FINISH REMOVEFILE libnss3.so
 FINISH REMOVEFILE libnspr4.so
 FINISH REMOVEFILE libmozsqlite3.so
-FINISH REMOVEFILE libmozalloc.so
 FINISH REMOVEFILE libfreebl3.so
 FINISH REMOVEFILE libfreebl3.chk
 FINISH REMOVEFILE icons/updater.png

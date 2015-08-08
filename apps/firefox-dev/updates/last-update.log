@@ -124,18 +124,11 @@ PREPARE ADD components/libmozgnome.so
 PREPARE ADD components/libdbusservice.so
 PREPARE ADD components/components.manifest
 PREPARE ADD chrome.manifest
-PREPARE ADD browser/searchplugins/yahoo.xml
-PREPARE ADD browser/searchplugins/wikipedia.xml
-PREPARE ADD browser/searchplugins/twitter.xml
-PREPARE ADD browser/searchplugins/google.xml
-PREPARE ADD browser/searchplugins/eBay.xml
-PREPARE ADD browser/searchplugins/ddg.xml
-PREPARE ADD browser/searchplugins/bing.xml
-PREPARE ADD browser/searchplugins/amazondotcom.xml
 PREPARE ADD browser/omni.ja
 PREPARE ADD browser/icons/mozicon128.png
 PREPARE ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
 PREPARE ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
+PREPARE ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
 PREPARE ADD browser/crashreporter-override.ini
 PREPARE ADD browser/components/libbrowsercomps.so
 PREPARE ADD browser/components/components.manifest
@@ -268,18 +261,11 @@ EXECUTE ADD components/libmozgnome.so
 EXECUTE ADD components/libdbusservice.so
 EXECUTE ADD components/components.manifest
 EXECUTE ADD chrome.manifest
-EXECUTE ADD browser/searchplugins/yahoo.xml
-EXECUTE ADD browser/searchplugins/wikipedia.xml
-EXECUTE ADD browser/searchplugins/twitter.xml
-EXECUTE ADD browser/searchplugins/google.xml
-EXECUTE ADD browser/searchplugins/eBay.xml
-EXECUTE ADD browser/searchplugins/ddg.xml
-EXECUTE ADD browser/searchplugins/bing.xml
-EXECUTE ADD browser/searchplugins/amazondotcom.xml
 EXECUTE ADD browser/omni.ja
 EXECUTE ADD browser/icons/mozicon128.png
 EXECUTE ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
 EXECUTE ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
+EXECUTE ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
 EXECUTE ADD browser/crashreporter-override.ini
 EXECUTE ADD browser/components/libbrowsercomps.so
 EXECUTE ADD browser/components/components.manifest
@@ -371,7 +357,6 @@ non-fatal error removing directory: defaults/, rv: 0, err: 39
 FINISH REMOVEDIR components/
 non-fatal error removing directory: components/, rv: 0, err: 39
 FINISH REMOVEDIR browser/searchplugins/
-non-fatal error removing directory: browser/searchplugins/, rv: 0, err: 39
 FINISH REMOVEDIR browser/icons/
 non-fatal error removing directory: browser/icons/, rv: 0, err: 39
 FINISH REMOVEDIR browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/
@@ -429,18 +414,11 @@ FINISH ADD components/libmozgnome.so
 FINISH ADD components/libdbusservice.so
 FINISH ADD components/components.manifest
 FINISH ADD chrome.manifest
-FINISH ADD browser/searchplugins/yahoo.xml
-FINISH ADD browser/searchplugins/wikipedia.xml
-FINISH ADD browser/searchplugins/twitter.xml
-FINISH ADD browser/searchplugins/google.xml
-FINISH ADD browser/searchplugins/eBay.xml
-FINISH ADD browser/searchplugins/ddg.xml
-FINISH ADD browser/searchplugins/bing.xml
-FINISH ADD browser/searchplugins/amazondotcom.xml
 FINISH ADD browser/omni.ja
 FINISH ADD browser/icons/mozicon128.png
 FINISH ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
 FINISH ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
+FINISH ADD browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
 FINISH ADD browser/crashreporter-override.ini
 FINISH ADD browser/components/libbrowsercomps.so
 FINISH ADD browser/components/components.manifest
