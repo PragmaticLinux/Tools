@@ -44,18 +44,11 @@ PREPARE REMOVEFILE components/libmozgnome.so
 PREPARE REMOVEFILE components/libdbusservice.so
 PREPARE REMOVEFILE components/components.manifest
 PREPARE REMOVEFILE chrome.manifest
-PREPARE REMOVEFILE browser/searchplugins/yahoo.xml
-PREPARE REMOVEFILE browser/searchplugins/wikipedia.xml
-PREPARE REMOVEFILE browser/searchplugins/twitter.xml
-PREPARE REMOVEFILE browser/searchplugins/google.xml
-PREPARE REMOVEFILE browser/searchplugins/eBay.xml
-PREPARE REMOVEFILE browser/searchplugins/ddg.xml
-PREPARE REMOVEFILE browser/searchplugins/bing.xml
-PREPARE REMOVEFILE browser/searchplugins/amazondotcom.xml
 PREPARE REMOVEFILE browser/omni.ja
 PREPARE REMOVEFILE browser/icons/mozicon128.png
 PREPARE REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
 PREPARE REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
+PREPARE REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
 PREPARE REMOVEFILE browser/crashreporter-override.ini
 PREPARE REMOVEFILE browser/components/libbrowsercomps.so
 PREPARE REMOVEFILE browser/components/components.manifest
@@ -74,7 +67,6 @@ PREPARE REMOVEDIR dictionaries/
 PREPARE REMOVEDIR defaults/pref/
 PREPARE REMOVEDIR defaults/
 PREPARE REMOVEDIR components/
-PREPARE REMOVEDIR browser/searchplugins/
 PREPARE REMOVEDIR browser/icons/
 PREPARE REMOVEDIR browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/
 PREPARE REMOVEDIR browser/extensions/
@@ -181,18 +173,11 @@ EXECUTE REMOVEFILE components/libmozgnome.so
 EXECUTE REMOVEFILE components/libdbusservice.so
 EXECUTE REMOVEFILE components/components.manifest
 EXECUTE REMOVEFILE chrome.manifest
-EXECUTE REMOVEFILE browser/searchplugins/yahoo.xml
-EXECUTE REMOVEFILE browser/searchplugins/wikipedia.xml
-EXECUTE REMOVEFILE browser/searchplugins/twitter.xml
-EXECUTE REMOVEFILE browser/searchplugins/google.xml
-EXECUTE REMOVEFILE browser/searchplugins/eBay.xml
-EXECUTE REMOVEFILE browser/searchplugins/ddg.xml
-EXECUTE REMOVEFILE browser/searchplugins/bing.xml
-EXECUTE REMOVEFILE browser/searchplugins/amazondotcom.xml
 EXECUTE REMOVEFILE browser/omni.ja
 EXECUTE REMOVEFILE browser/icons/mozicon128.png
 EXECUTE REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
 EXECUTE REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
+EXECUTE REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
 EXECUTE REMOVEFILE browser/crashreporter-override.ini
 EXECUTE REMOVEFILE browser/components/libbrowsercomps.so
 EXECUTE REMOVEFILE browser/components/components.manifest
@@ -211,7 +196,6 @@ EXECUTE REMOVEDIR dictionaries/
 EXECUTE REMOVEDIR defaults/pref/
 EXECUTE REMOVEDIR defaults/
 EXECUTE REMOVEDIR components/
-EXECUTE REMOVEDIR browser/searchplugins/
 EXECUTE REMOVEDIR browser/icons/
 EXECUTE REMOVEDIR browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/
 EXECUTE REMOVEDIR browser/extensions/
@@ -318,18 +302,11 @@ FINISH REMOVEFILE components/libmozgnome.so
 FINISH REMOVEFILE components/libdbusservice.so
 FINISH REMOVEFILE components/components.manifest
 FINISH REMOVEFILE chrome.manifest
-FINISH REMOVEFILE browser/searchplugins/yahoo.xml
-FINISH REMOVEFILE browser/searchplugins/wikipedia.xml
-FINISH REMOVEFILE browser/searchplugins/twitter.xml
-FINISH REMOVEFILE browser/searchplugins/google.xml
-FINISH REMOVEFILE browser/searchplugins/eBay.xml
-FINISH REMOVEFILE browser/searchplugins/ddg.xml
-FINISH REMOVEFILE browser/searchplugins/bing.xml
-FINISH REMOVEFILE browser/searchplugins/amazondotcom.xml
 FINISH REMOVEFILE browser/omni.ja
 FINISH REMOVEFILE browser/icons/mozicon128.png
 FINISH REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf
 FINISH REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png
+FINISH REMOVEFILE browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/chrome.manifest
 FINISH REMOVEFILE browser/crashreporter-override.ini
 FINISH REMOVEFILE browser/components/libbrowsercomps.so
 FINISH REMOVEFILE browser/components/components.manifest
@@ -356,7 +333,6 @@ FINISH REMOVEDIR defaults/
 non-fatal error removing directory: defaults/, rv: 0, err: 39
 FINISH REMOVEDIR components/
 non-fatal error removing directory: components/, rv: 0, err: 39
-FINISH REMOVEDIR browser/searchplugins/
 FINISH REMOVEDIR browser/icons/
 non-fatal error removing directory: browser/icons/, rv: 0, err: 39
 FINISH REMOVEDIR browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/

@@ -1,2 +1,7 @@
 #!/bin/sh
+
+if ! xset q &>/dev/null; then
+	echo "hello"
+else
 /pragmatic/apps/firefox-dev/firefox https://www.phpbb.com/
+fi

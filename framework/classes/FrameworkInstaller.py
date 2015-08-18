@@ -13,8 +13,19 @@ from classes.VirtualHost import VirtualHost
 class FrameworkInstaller:
 
     def __init__(self):
-        self.VServer = VirtualHost()
-        self.VServer.start()
+        #Fill with detail for every framework
+        self.frameworkDetails = {
+        "ember":{"name":"ember","website":"http://www.emberjs.com"},
+        "laravel":{"name":"laravel","website":"http://www.laravel.com"},
+        "skeleton":{"name":"skeleton","website":"http://www.getskeleton.com"},
+        "99lime":{"name":"99lime","website":"http://www.99lime.com"},
+        "bootstrap":{"name":"bootstrap","website":"http://www.getbootstrap.com"},
+        "foundation-css":{"name":"foundation","website":"http://www.foundation.zurb.com"},
+        "angularjs":{"name":"angularjs","website":"http://www.angularjs.org"},
+        "codeigniter":{"name":"codeigniter","website":"http://www.codeigniter.com"},
+        "yii-basic":{"name":"basic","website":"http://www.yiiframework.com"},
+        "backbone":{"name":"backbone","website":"http://www.backbonejs.org"}
+        }
         self.frameworkName = " "
         self.specialFramework = "laravel yii-basic yii-advanced"
         self.ip = ""
@@ -60,6 +71,11 @@ class FrameworkInstaller:
         os.system("chmod -R 777 /home/"+projectname)
 
     def start(self):
+        #Creating virtual server settings and optimization
+        self.VServer = VirtualHost()
+        self.VServer.frameworkName = self.frameworkName
+        self.VServer.frameworkDetails = self.frameworkDetails
+        self.VServer.start()
         if self.frameworkName in self.specialFramework:
             os.system("mkdir /tmp/pragmaticLinuxCache")
             os.system("mkdir /tmp/pragmaticLinuxCache/framework")
