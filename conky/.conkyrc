@@ -72,4 +72,5 @@ ${color fff}Apache Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/c
 ${color fff}MySQL Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh mysql}
 ${color fff}SSH Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh sshd}
 ${color fff}FTP Server      $alignr ${color 00BBBD} ${execi 1 sh /pragmatic/conky/service-status.sh ftp}
-
+Ethernet ${addr enp0s3}
+Wireless ${addr wlo0 wlo1}

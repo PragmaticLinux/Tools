@@ -3,7 +3,7 @@ import os
 import sys
 import pwd
 import subprocess
-import PyZenity 
+from classes.pyzenity.build.lib import PyZenity
 from subprocess import Popen 
 import re
 
