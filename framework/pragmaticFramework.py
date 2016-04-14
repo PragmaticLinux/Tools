@@ -1,7 +1,8 @@
-# Tools: Laravel Installer
+# Tools
 # Date:15/May/2015
 # Author: Alban Mulaki (lithium)
-# Website: 
+# Website: www.pragamticlinux.org
+#@pragmatic
 
 #Library
 import sys
@@ -12,7 +13,7 @@ if len(sys.argv) > 1:
 else:
     framework = input('Framework Name: ')
 
-FInstaller = FrameworkInstaller()
-FInstaller.frameworkName = framework
-FInstaller.start()
-input(FInstaller.FG_GREEN+"Installation Completed 100% --> Successful  (Press Enter to exit)")
+PragmaticFrameworkInstaller = FrameworkInstaller()
+PragmaticFrameworkInstaller.frameworkName = framework
+PragmaticFrameworkInstaller.start()
+input(PragmaticFrameworkInstaller.FG_GREEN+"Installation Completed 100% --> Successful  (Press Enter to exit)")

@@ -20,7 +20,8 @@ class VirtualHost:
     #Create User
     def create_user(self,group,projectname,password):
         os.system("useradd -m -g "+group+" -G wheel -s /bin/bash "+projectname)
-        os.mkdir("/home/"+projectname+"/public_html",777)
+       	os.mkdir("/home/"+projectname+"/public_html",777)
+        os.mkdir("/home/"+projectname+"/.composer",777)
         os.system("chmod -R 777 /home/"+projectname)
         os.system("echo "+projectname+":"+password+" | chpasswd ")
 

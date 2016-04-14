@@ -1,7 +1,0 @@
-#  PragmaticLinux Distro
-#  Alban Mulaki
-#  amulaki@pragmaticlinux.com
-
-Startup conky with command 
-
-conky -c /pragmatic/conky/.conkyrc
