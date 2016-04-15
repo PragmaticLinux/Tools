@@ -13,23 +13,21 @@
 
 VERSION=1.0
 TYPE=standalone
-EXTENSION[update]=update
-EXTENSION[install]=install
-EXTENSION[version]=version
-EXTENSION[list]=list
-#EXTENSION[-]
-#EXTENSION[-]
-##echo $EXTENSION[-u]
-#echo ${EXTENSION[-u]}
-echo " _____                                 _   _        _      _                  "
-echo "|  __ \                               | | (_)      | |    (_)                 "
-echo "| |__) | __ __ _  __ _ _ __ ___   __ _| |_ _  ___  | |     _ _ __  _   ___  __"
-echo "|  ___/ '__/ _\` |/ _\` | '_ \` _ \ / _\` | __| |/ __| | |    | | '_ \| | | \ \/ /"
-echo "| |   | | | (_| | (_| | | | | | | (_| | |_| | (__  | |____| | | | | |_| |>  < "
-echo "|_|   |_|  \__,_|\__, |_| |_| |_|\__,_|\__|_|\___| |______|_|_| |_|\__,_/_/\_\\"
-echo "                  __/ |                                                       "
-echo "                 |___/                                                        "
-echo -en "\n===================================================================================="
+
+UPDATE="update"
+INSTALL="install"
+VERSION="version"
+LIST="list"
+
+echo "   _____                                 _   _        _      _                  "
+echo "  |  __ \                               | | (_)      | |    (_)                 "
+echo "  | |__) | __ __ _  __ _ _ __ ___   __ _| |_ _  ___  | |     _ _ __  _   ___  __"
+echo "  |  ___/ '__/ _\` |/ _\` | '_ \` _ \ / _\` | __| |/ __| | |    | | '_ \| | | \ \/ /"
+echo "  | |   | | | (_| | (_| | | | | | | (_| | |_| | (__  | |____| | | | | |_| |>  < "
+echo "  |_|   |_|  \__,_|\__, |_| |_| |_|\__,_|\__|_|\___| |______|_|_| |_|\__,_/_/\_\\"
+echo "                    __/ |                                                       "
+echo "                   |___/                                                        "
+echo "\n===================================================================================="
 echo " "
 
 
@@ -55,7 +53,17 @@ show_version(){
 }
 
 help_usage(){
-	echo "Help usage"
+	echo "  Usage: pragmatic-dev [options] [framework]"
+	echo "\n"
+	echo "  Examples:\n"
+	echo "   pragmatic-dev  install laravel		--->	# Install new framework laravel "
+	echo "   pragmatic-dev  update			--->	# Update PragmaticDev Tools"
+	echo "\n"
+	echo "  Where [options] is one of:"
+	echo "     version              #Shows the version info and details about PragmaticDev Tools"
+	echo "     update               #Update PragmaticDev Tools itself"
+	echo "     install [framework]  #Install framework"
+	echo "     list                 #List all framework supported by pragmaitc-dev"
 }
 
 list_framework(){
@@ -65,16 +73,16 @@ list_framework(){
 for arg in "$@"
 do
 case $arg in
-	update )
+	$UPDATE )
 		update_pragmaticDev
 	;;
-	install )
+	$INSTALL )
 		create_new_project
 	;;	
-	version )
+	$VERSION )
 		show_version
 	;;
-	list )
+	$LIST )
 		list_framework
 	;;
 	*)
@@ -82,7 +90,8 @@ case $arg in
 	;;
 esac
 done
-if [ $# == 0 ]
+
+if [  $# = 0 ]
 	then
 	help_usage
 fi
