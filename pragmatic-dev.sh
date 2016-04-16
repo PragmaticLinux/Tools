@@ -27,7 +27,7 @@ echo "  | |   | | | (_| | (_| | | | | | | (_| | |_| | (__  | |____| | | | | |_| 
 echo "  |_|   |_|  \__,_|\__, |_| |_| |_|\__,_|\__|_|\___| |______|_|_| |_|\__,_/_/\_\\"
 echo "                    __/ |                                                       "
 echo "                   |___/                                                        "
-echo "\n===================================================================================="
+echo "===================================================================================="
 echo " "
 
 
@@ -54,11 +54,11 @@ show_version(){
 
 help_usage(){
 	echo "  Usage: pragmatic-dev [options] [framework]"
-	echo "\n"
+	echo ""
 	echo "  Examples:\n"
-	echo "   pragmatic-dev  install laravel		--->	# Install new framework laravel "
-	echo "   pragmatic-dev  update			--->	# Update PragmaticDev Tools"
-	echo "\n"
+	echo "   pragmatic-dev  install laravel	  --->  # Install new framework laravel "
+	echo "   pragmatic-dev  update		  --->  # Update PragmaticDev Tools"
+	echo ""
 	echo "  Where [options] is one of:"
 	echo "     version              #Shows the version info and details about PragmaticDev Tools"
 	echo "     update               #Update PragmaticDev Tools itself"
