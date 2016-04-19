@@ -45,6 +45,8 @@ update_pragmaticDev(){
 	git clone https://github.com/PragmaticLinux/Tools.git /tmp/pragmaticTools/update
 	mv /pragmatic/* /tmp/pragmaticTools/restore
 	mv /tmp/pragmaticTools/update/* /pragmatic
+	cp /tmp/pragmaticTools/update/pragmatic-dev.sh /usr/bin/pragmatic-dev
+	rm -R /tmp/pragmaticTools/update/*
 	echo "Updated Successfully"
 }
 
