@@ -11,7 +11,7 @@
 # @pragmaticLinux
 #========================================================================================
 
-VERSION=1.0
+VERSION_NUM=1.0
 TYPE=standalone
 
 UPDATE="update"
@@ -33,11 +33,12 @@ echo " "
 
 
 create_new_project(){
-	echo "write script for installing framework"
+	python ./framework/pragmaticFramework.py $1
 }
 
-#Update pragmatic linux dev tools
-
+###################################
+#Update pragmatic linux dev tools #
+###################################
 update_pragmaticDev(){
 	mkdir -p /tmp/pragmaticTools
 	mkdir -p /tmp/pragmaticTools/update
@@ -50,10 +51,17 @@ update_pragmaticDev(){
 	echo "Updated Successfully"
 }
 
+
+
+
 show_version(){
-	echo "show version here"
+	echo "Pragmatic Dev Tools Version: $VERSION_NUM"
 }
 
+
+##########################
+# Help message and usage #
+##########################
 help_usage(){
 	echo "  Usage: pragmatic-dev [options] [framework]"
 	echo ""
@@ -68,8 +76,21 @@ help_usage(){
 	echo "     list                 #List all framework supported by pragmaitc-dev"
 }
 
+
+###################
+# List framework  #
+###################
 list_framework(){
-	echo "list framework supported to install"
+        echo "   ember          # Ember Javascript Framework"
+	echo "   laravel        # Laravel php Framework"
+	echo "   skeleton       # Skeleton css html Framework"
+	echo "   99lime         # 99lime kickstarter HTML CSS Framework"
+	echo "   bootstrap      # Bootstrap Css HTML Framework"
+	echo "   foundation-css # Foundation Css HTML Framework"
+	echo "   angularjs      # AngularJS Javascript Framework"
+	echo "   codeigniter    # Codeigniter PHP Framework"
+	echo "   yii-basic      # Yii Basic PHP Framework"
+	echo "   backbone       # Backbone Javascript Framework"
 }
 
 for arg in "$@"
@@ -79,7 +100,7 @@ case $arg in
 		update_pragmaticDev
 	;;
 	$INSTALL )
-		create_new_project
+		create_new_project $2
 	;;	
 	$VERSION )
 		show_version

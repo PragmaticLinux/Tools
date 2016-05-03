@@ -64,7 +64,7 @@ class VirtualHost:
                 self.password = data_prepare[1]
             else:
                 #print(self.frameworkDetails[""+self.frameworkName+""]["website"])
-                os.system("firefox-dev "+self.frameworkDetails[self.frameworkName]["website"])
+                os.system("firefox "+self.frameworkDetails[self.frameworkName]["website"])
                 quit()
         else:
             self.projectname = input('Project Name: ')
